@@ -1,0 +1,36 @@
+* {
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	margin: 15px;
+}
+
+.board td {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.board td:hover {
+	background-color: lightsalmon;
+}
+
+.marked {
+	background-color: lightgray;
+}
+
+div.difficulty {
+	text-align: center;
+	background-color: orange;
+	width: 500px;
+	font-size: 22px;
+	padding: 10px;
+	border: 3px solid saddlebrown;
+	margin: 15px auto;
+}
