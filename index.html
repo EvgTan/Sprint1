@@ -11,18 +11,30 @@
 	<h1>Mine Sweeper</h1>
 	<div class="difficulty">
 		<input type="radio" name="difficulty" value="16" checked="checked" onclick="initGame()">
-		<label for="Beginner">Beginner</label>
+		<label for="Beginner"><span>Beginner</span></label>
 	
 		<input type="radio" name="difficulty" value="64" onclick="initGame()">
-		<label for="Medium">Medium</label>
+		<label for="Medium"><span>Medium</span></label>
 	
 		<input type="radio" name="difficulty" value="144" onclick="initGame()">
-		<label for="Expert">Expert</label>
+		<label for="Expert"><span>Expert</span></label>
+		<div class="timer"></div>
 	</div>
+
+	<div class="container">
+		<div class="live"></div>
+		<button class="smile" onclick="initGame()"></button>
+		<div class="hint"></div>
+	</div>
+
 	<div>
-		<table border="1" cellpadding="10">
+		<table oncontextmenu="return false" border="1" cellpadding="10">
 			<tbody class="board"></tbody>
 		</table>
+	</div>
+	<div class="result"></div>
+	<div class="footer">
+		<p>by Evgeniia Tanasiichuk &copy;</p>
 	</div>
 	
 	<script src="js/utils.js"></script>

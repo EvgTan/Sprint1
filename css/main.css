@@ -2,12 +2,52 @@
 	margin: 0 auto;
 }
 
+body {
+	background-image: url('/img/11.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 h1 {
 	text-align: center;
+	text-shadow: rgb(241, 204, 93) 2px 0 10px;
 }
 
 input {
 	margin: 15px;
+}
+
+span {
+	text-shadow: saddlebrown 1px 0 2px;
+}
+
+.timer {
+	color: rgb(100, 44, 4);
+	text-shadow: orange 1px 0 0.5px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.live, .hint {
+	width: 100px;
+	height: 40px;
+	background-color:#fdf3e4;
+	margin: 20px;
+}
+
+.live {
+	background-color: #feddba;
+}
+
+.smile {
+	width: 50px;
+	height: 40px;
+	background-color: #f9ac68;
+	margin: 20px;
 }
 
 .board td {
@@ -15,6 +55,10 @@ input {
 	height: 30px;
 	text-align: center;
 	transition: 0.5s;
+	background-color: rgb(247, 231, 187);
+	border-color: brown;
+	border-style: ridge;
+	cursor: pointer;
 }
 
 .board td:hover {
@@ -22,15 +66,34 @@ input {
 }
 
 .marked {
-	background-color: lightgray;
+	background-color: rgb(237, 214, 214);
 }
 
 div.difficulty {
 	text-align: center;
-	background-color: orange;
+	background-color:#f9ac68;
 	width: 500px;
 	font-size: 22px;
 	padding: 10px;
 	border: 3px solid saddlebrown;
 	margin: 15px auto;
+}
+
+.flipped {
+	display: none;
+}
+
+div.result {
+	text-align: center;
+	margin-top: 15px;
+	color: rgb(100, 44, 4);
+	text-shadow: orange 1px 0 2px;
+}
+
+.footer {
+	color: rgb(100, 44, 4);
+	text-shadow: orange 1px 0 0.5px;
+	position: absolute;
+	bottom: 0;
+	margin-left: 670px;
 }
